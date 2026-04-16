@@ -1,4 +1,4 @@
-name: Deploy Next.js to Server
+name: Deploy Vite app to server
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
-          
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -23,9 +23,10 @@ jobs:
           timeout: 5m
           script: |
             cd /Termin-Demo
-            git pull 
-            npm install
+            git pull
+            npm ci || npm install
             npm run build
             pm2 delete Termin-Demo || true
-            PORT=4800 pm2 start /Termin-Demo/node_modules/next/dist/bin/next --name "Termin-Demo" -- start 
+            pm2 start ecosystem.config.cjs
+            pm2 startup
             pm2 save
