@@ -66,3 +66,20 @@ body {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.22);
 }
+
+/*
+ * iOS Safari zooms the page when focusing inputs with computed font-size < 16px.
+ * Keep form controls at least 16px on narrow viewports to avoid that jump/zoom.
+ */
+@media (max-width: 639px) {
+  :where(
+      input:not([type='checkbox']):not([type='radio']):not([type='range']):not(
+          [type='submit']
+        ):not([type='button']),
+      select,
+      textarea
+    ) {
+    font-size: 16px !important;
+    line-height: 1.4;
+  }
+}
