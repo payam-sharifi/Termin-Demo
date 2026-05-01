@@ -2,6 +2,7 @@ import { MessageCircle, X } from "lucide-react";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { mockBusiness } from "../../data/mockBusiness";
 import { useLanguage } from "../../i18n/useLanguage";
+import { TypingBubbleDemo } from "./TypingBubbleDemo";
 
 type Appointment = {
   id: string;
@@ -283,6 +284,7 @@ export function AppointmentAgentDemoPanel({
             role="status"
             className="space-y-4 py-3 text-xs leading-relaxed"
           >
+            <TypingBubbleDemo phrases={examples} active />
             <p className="text-[13px] text-white/88">{t("chatEmptyIntro")}</p>
             <p className="text-book-muted">
               <span className="font-semibold uppercase tracking-wider text-book-gold/90">

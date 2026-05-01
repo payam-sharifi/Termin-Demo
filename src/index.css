@@ -49,6 +49,32 @@ body {
   animation: book-sheet-up 0.38s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
 
+@keyframes book-typing-caret {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.book-typing-caret {
+  animation: book-typing-caret 0.92s steps(2, jump-none) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-typing-caret {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.typing-demo-soft-glow {
+  filter: drop-shadow(0 0 14px rgba(197, 160, 89, 0.18));
+}
+
 .services-scroll {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
