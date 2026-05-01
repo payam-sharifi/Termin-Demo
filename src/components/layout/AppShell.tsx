@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { AppointmentAgentChatLauncher } from "../chat/AppointmentAgentDemo";
 import { mockBusiness } from "../../data/mockBusiness";
 import { useLanguage } from "../../i18n/useLanguage";
 import type { Locale } from "../../i18n/messages";
@@ -303,6 +304,8 @@ export function AppShell({ children }: { children: ReactNode }) {
           </div>
         </div>
       ) : null}
+
+      <AppointmentAgentChatLauncher />
     </div>
   );
 }

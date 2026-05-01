@@ -71,7 +71,9 @@ function readDraftDate(): Date | null {
 export function BookingWizard() {
   const { locale, t } = useLanguage();
   const navigate = useNavigate();
-  const [provider, setProvider] = useState<MockProvider | null>(readDraftProvider);
+  const [provider, setProvider] = useState<MockProvider | null>(
+    readDraftProvider,
+  );
   const [monthCursor, setMonthCursor] = useState(() => {
     const d = readDraftDate();
     if (d) return { y: d.getFullYear(), m: d.getMonth() };
@@ -99,7 +101,9 @@ export function BookingWizard() {
     return Array.from({ length: 7 }, (_, i) => {
       const d = new Date(base);
       d.setDate(base.getDate() + i);
-      return new Intl.DateTimeFormat(intlLocale, { weekday: "short" }).format(d);
+      return new Intl.DateTimeFormat(intlLocale, { weekday: "short" }).format(
+        d,
+      );
     });
   }, [intlLocale, locale]);
 
@@ -228,9 +232,9 @@ export function BookingWizard() {
                 if (!cell) return <div key={`pad-${i}`} />;
                 const iso = toISODate(cell);
                 const status = getDateAvailability(iso);
-                const isSel =
-                  selectedDate && toISODate(selectedDate) === iso;
-                const clickable = status === "available" || status === "partial";
+                const isSel = selectedDate && toISODate(selectedDate) === iso;
+                const clickable =
+                  status === "available" || status === "partial";
                 const borderClass =
                   status === "available"
                     ? "border-book-slot-green"

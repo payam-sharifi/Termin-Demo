@@ -118,6 +118,47 @@ const en: Msg = {
   dial_gb: 'United Kingdom (+44)',
   dial_fr: 'France (+33)',
   dial_us: 'United States / Canada (+1)',
+
+  chatModalTitle: 'Demo Chat Agent',
+  chatHelp: 'Help',
+  chatHelpTooltip: 'Show or hide command help',
+  chatTooltip:
+    'Try the demo chat agent — book, edit, or delete appointments.',
+  chatOpenAria: 'Open demo chat agent',
+  chatDismissTooltipAria: 'Dismiss hint',
+  chatPlaceholder:
+    'Type a command, e.g. book vansy 2026-05-12 14:30',
+  chatCommandInputAria: 'Command input',
+  chatTranscriptHint: 'Responses will appear here.',
+  chatEmptyIntro:
+    'Use the field below to send commands. Replies show up in this chat.',
+  chatEmptyProvidersLabel: 'Demo providers:',
+  chatEmptyExamplesHint:
+    'Tap an example to fill the input—then press Send.',
+  chatEmptyHelpTip:
+    'Tip: send help as a command to open the full syntax reference.',
+  chatSend: 'Send',
+  chatQuickExamples: 'Quick examples',
+  chatAppointmentsLocal: 'Appointments (local demo only)',
+  chatAgentWelcome:
+    "Hi! I'm your demo booking agent — you can book, edit, delete, and list appointments.\nType `help` for command syntax.",
+  chatHelpBody:
+    'Commands (English keywords):\nbook <provider> <yyyy-mm-dd> <hh:mm> [note]\nedit <id> provider=<provider> date=<yyyy-mm-dd> time=<hh:mm> note=<text>\ndelete <id>\nlist\nhelp',
+  chatNoAppointments: 'No appointments yet.',
+  chatUsageBook: 'Usage: book <provider> <yyyy-mm-dd> <hh:mm> [note]',
+  chatUnknownProviderTry: 'Unknown provider. Try vansy, marco, or leni.',
+  chatDateFormatErr: 'Date must be yyyy-mm-dd.',
+  chatTimeFormatErr: 'Time must be hh:mm.',
+  chatBooked: 'Booked #{id} with {provider} on {date} at {time}.',
+  chatUsageDelete: 'Usage: delete <id>',
+  chatApptNotFound: 'Appointment #{id} not found.',
+  chatDeleted: 'Appointment #{id} deleted.',
+  chatUsageEdit:
+    'Usage: edit <id> provider=<provider> date=<yyyy-mm-dd> time=<hh:mm> note=<text>',
+  chatUnknownProviderEdit: 'Unknown provider in edit command.',
+  chatUpdated: 'Appointment #{id} updated.',
+  chatUnknownCommand: 'Unknown command "{cmd}". Type help for options.',
+  chatListNoteLabel: 'note',
 }
 
 const de: Msg = {
@@ -233,6 +274,50 @@ const de: Msg = {
   dial_gb: 'Vereinigtes Königreich (+44)',
   dial_fr: 'Frankreich (+33)',
   dial_us: 'USA / Kanada (+1)',
+
+  chatModalTitle: 'Demo-Chat-Agent',
+  chatHelp: 'Hilfe',
+  chatHelpTooltip: 'Befehlsübersicht ein- oder ausblenden',
+  chatTooltip:
+    'Demo-Chat ausprobieren — Termine buchen, bearbeiten oder löschen.',
+  chatOpenAria: 'Demo-Chat öffnen',
+  chatDismissTooltipAria: 'Hinweis ausblenden',
+  chatPlaceholder:
+    'Befehl eingeben, z. B. book vansy 2026-05-12 14:30',
+  chatCommandInputAria: 'Befehlseingabe',
+  chatTranscriptHint: 'Antworten erscheinen hier.',
+  chatEmptyIntro:
+    'Geben Sie unten Befehle ein und tippen Sie auf Senden. Antworten erscheinen in diesem Chat.',
+  chatEmptyProvidersLabel: 'Anbieter in dieser Demo:',
+  chatEmptyExamplesHint:
+    'Tippen Sie auf ein Beispiel, um es einzufügen—dann Senden.',
+  chatEmptyHelpTip:
+    'Tipp: help als Befehl senden, um die vollständige Syntax zu öffnen.',
+  chatSend: 'Senden',
+  chatQuickExamples: 'Schnellbeispiele',
+  chatAppointmentsLocal: 'Termine (nur lokal)',
+  chatAgentWelcome:
+    'Hallo! Ich bin die Demo zur Terminbuchung — buchen, bearbeiten, löschen und auflisten möglich.\nTippen Sie `help` für die Syntax.',
+  chatHelpBody:
+    'Befehle (Schlüsselwörter auf Englisch):\nbook <Anbieter> <yyyy-mm-dd> <hh:mm> [Notiz]\nedit <id> provider=<Anbieter> date=<yyyy-mm-dd> time=<hh:mm> note=<Text>\ndelete <id>\nlist\nhelp',
+  chatNoAppointments: 'Noch keine Termine.',
+  chatUsageBook:
+    'Verwendung: book <Anbieter> <yyyy-mm-dd> <hh:mm> [Notiz]',
+  chatUnknownProviderTry:
+    'Unbekannter Anbieter. Versuchen Sie vansy, marco oder leni.',
+  chatDateFormatErr: 'Datum als yyyy-mm-dd angeben.',
+  chatTimeFormatErr: 'Zeit als hh:mm angeben.',
+  chatBooked: 'Gebucht #{id}: {provider} am {date} um {time}.',
+  chatUsageDelete: 'Verwendung: delete <id>',
+  chatApptNotFound: 'Termin #{id} nicht gefunden.',
+  chatDeleted: 'Termin #{id} gelöscht.',
+  chatUsageEdit:
+    'Verwendung: edit <id> provider=<Anbieter> date=<yyyy-mm-dd> time=<hh:mm> note=<Text>',
+  chatUnknownProviderEdit: 'Unbekannter Anbieter im bearbeiten-Befehl.',
+  chatUpdated: 'Termin #{id} aktualisiert.',
+  chatUnknownCommand:
+    'Unbekannter Befehl «{cmd}». Tippen Sie help für Optionen.',
+  chatListNoteLabel: 'Notiz',
 }
 
 const fa: Msg = {
@@ -347,6 +432,50 @@ const fa: Msg = {
   dial_gb: 'بریتانیا ‎(+44)',
   dial_fr: 'فرانسه ‎(+33)',
   dial_us: 'ایالات متحده / کانادا ‎(+1)',
+
+  chatModalTitle: 'چت نمایشی رزرو',
+  chatHelp: 'راهنما',
+  chatHelpTooltip: 'نمایش یا پنهان کردن راهنمای دستورها',
+  chatTooltip:
+    'چت نمایشی را امتحان کنید — رزرو، ویرایش یا حذف نوبت.',
+  chatOpenAria: 'باز کردن چت نمایشی',
+  chatDismissTooltipAria: 'بستن راهنمای کوتاه',
+  chatPlaceholder:
+    'دستور بزنید، مثلاً book vansy 2026-05-12 14:30',
+  chatCommandInputAria: 'ورودی دستور',
+  chatTranscriptHint: 'پاسخ‌ها اینجا نمایش داده می‌شوند.',
+  chatEmptyIntro:
+    'دستور را پایین بنویسید و ارسال را بزنید. پاسخ‌ها در همین گفتگو می‌آیند.',
+  chatEmptyProvidersLabel: 'ارائه‌دهندگان نمایشی:',
+  chatEmptyExamplesHint:
+    'روی یک نمونه بزنید تا در ورودی قرار بگیرد، سپس ارسال کنید.',
+  chatEmptyHelpTip:
+    'راهنما: برای فهرست کامل دستورها، help را به‌عنوان دستور بفرستید.',
+  chatSend: 'ارسال',
+  chatQuickExamples: 'نمونه‌های سریع',
+  chatAppointmentsLocal: 'نوبت‌ها (فقط محلی)',
+  chatAgentWelcome:
+    'سلام! من نمایندهٔ رزرو نمایشی هستم — می‌توانید نوبت بسازید، ویرایش، حذف و فهرست بگیرید.\nبرای سینتکس `help` بزنید.',
+  chatHelpBody:
+    'دستورها (کلیدواژه‌های انگلیسی):\nbook <provider> <yyyy-mm-dd> <hh:mm> [یادداشت]\nedit <id> provider=<provider> date=<yyyy-mm-dd> time=<hh:mm> note=<متن>\ndelete <id>\nlist\nhelp',
+  chatNoAppointments: 'هنوز نوبتی نیست.',
+  chatUsageBook:
+    'استفاده: book <provider> <yyyy-mm-dd> <hh:mm> [یادداشت]',
+  chatUnknownProviderTry:
+    'ارائه‌دهنده ناشناس. vansy، marco یا leni را امتحان کنید.',
+  chatDateFormatErr: 'تاریخ باید به صورت yyyy-mm-dd باشد.',
+  chatTimeFormatErr: 'زمان باید به صورت hh:mm باشد.',
+  chatBooked: 'رزرو شد #{id} با {provider} در {date} ساعت {time}.',
+  chatUsageDelete: 'استفاده: delete <id>',
+  chatApptNotFound: 'نوبت #{id} پیدا نشد.',
+  chatDeleted: 'نوبت #{id} حذف شد.',
+  chatUsageEdit:
+    'استفاده: edit <id> provider=<provider> date=<yyyy-mm-dd> time=<hh:mm> note=<متن>',
+  chatUnknownProviderEdit: 'ارائه‌دهندهٔ ناشناس در دستور ویرایش.',
+  chatUpdated: 'نوبت #{id} به‌روز شد.',
+  chatUnknownCommand:
+    'دستور ناشناس «{cmd}». برای گزینه‌ها help بزنید.',
+  chatListNoteLabel: 'یادداشت',
 }
 
 export const messages: Record<Locale, Msg> = { en, de, fa }
